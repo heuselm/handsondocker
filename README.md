@@ -1,7 +1,7 @@
 # handsondocker
 A Data engineering Handson Session 
-Usage
-Clone the repo
-cd repo
-docker build -it tensorflow .
-docker run tensorflow
+#Usage
+Clone the repo<br />
+cd repo<br />
+docker build -it tensorflow .<br />
+docker run tensorflow<br />
