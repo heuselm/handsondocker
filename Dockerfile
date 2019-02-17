@@ -7,4 +7,5 @@ RUN apt-get update -y && apt-get install -y \
     software-properties-common
 RUN pip3 install tensorflow
 RUN chmod +x index.py
-CMD ["python3","index.py"]
+RUN chmod +x test.py
+#CMD ["python3","index.py"]
