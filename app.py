@@ -39,7 +39,7 @@ def hello(name):
     plt.ylabel('Mid Price')
     plt.legend(fontsize=18)
     plt.savefig('./static/'+name+'1.png')
-    return render_template('index.html', name = 'new_plot', url ='/static/'+name+'.png',url1='/static/'+name+'1.png',mse_errors1=mse1,mse_errors=mse)
+    return render_template('index.html', name = name, hostname=socket.gethostname(),url ='/static/'+name+'.png',url1='/static/'+name+'1.png',mse_errors1=mse1,mse_errors=mse)
 
 if __name__ == "__main__":
     app.config["CACHE_TYPE"] = "null"
