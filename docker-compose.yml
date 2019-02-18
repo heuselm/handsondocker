@@ -2,13 +2,13 @@ version: '3'
 
 services:
   awesome:
-   image: stockprediction
+   image: # Add your image from docker hub
    ports:
-     - 8011
+     #assigin port of your app
    environment:
      - SERVICE_PORTS=8011
    deploy:
-     replicas: 5
+     replicas: #Add replicas 
      update_config:
        parallelism: 5
        delay: 10s
@@ -22,7 +22,7 @@ services:
   proxy:
     image: dockercloud/haproxy
     depends_on:
-      - awesome
+      # Add the service name
     environment:
       - BALANCE=leastconn
     volumes:
