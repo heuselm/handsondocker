@@ -1,5 +1,5 @@
-# handsondocker
-Deploy ML models in Docker<br /> 
+# Deploy ML models in Docker<br />
+ 
 # Task1: Build a docker image for the application <br />
   1. Open the dockerfile and fill the image as in demo.<br />
   2. Build the image.<br />
