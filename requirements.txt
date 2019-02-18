@@ -1,0 +1,5 @@
+tensorflow
+pandas_datareader
+matplotlib
+sklearn
+Flask

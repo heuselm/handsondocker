@@ -1,11 +1,12 @@
-FROM ubuntu:18.04
+# Use your own base image
+FROM python
+#Set Up working directory
 WORKDIR /app
+#Copy all the code to working directory
 COPY . /app
-RUN apt-get update -y && apt-get install -y \
-    python3 \
-    python3-pip \ 
-    software-properties-common
-RUN pip3 install tensorflow
-RUN chmod +x index.py
-RUN chmod +x test.py
-#CMD ["python3","index.py"]
+#Install Dependencies
+RUN pip install --trusted-host pypi.python.org -r requirements.txt
+#Expose port to communicate 
+EXPOSE 8011
+# command to run APP
+CMD ["python","app.py"]
